@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+  }
+  .sidebar {
+      background-color: skyblue;
+      display:grid;
+      grid-column: 1/2;
+      grid-row:1/-1;
+  }
+    .userbar{
+        background-color: rgb(255, 255, 255);
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-column: 2/4;
+        grid-row:1/2;
+    }
+    .projects{
+        background-color: rgb(182, 182, 182);
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-column: 2/3;
+        grid-row:2/4;
+    }
+    .announcements{
+      background-color: rgb(182, 182, 182);
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-column: 3/4;
+      grid-row:2/3;
+    }
+    .trending{
+      background-color: rgb(182, 182, 182);
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-column: 3/4;
+      grid-row:3/4;
+    }
