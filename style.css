@@ -10,7 +10,7 @@
     "sidebar projects announcements"
     "sidebar projects trending";
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: 12em 2fr 2fr;
   }
   .sidebar {
       background-color: skyblue;
@@ -23,8 +23,8 @@
         padding: 35px;
         grid-area:userbar;
         display:grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 70% auto;
+        grid-template-rows: 40% auto;
     }
     #searchbar {
       background-color: rgb(226, 226, 226);
@@ -33,22 +33,44 @@
       height:30px;
     }
     .userid{
-      grid-column: 3/4;
+      grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    }
+    .otheruserid{
+      grid-column: 1/2;
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
     }
     .name{
       padding-left: 40px;
+      align-self: center;
     }
     #github-img {
       border-radius: 50%;
-      height: 70px;
+      height: auto;
+      display: flex;
+      justify-content: left;
 
     }
-
+    .userbar-buttons {
+      
+    }
+    .new,
+    .upload,
+    .share {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
     .projects{
-        background-color: rgb(182, 182, 182);
+        
         padding: 35px;
         grid-area:projects;
         display: grid;
@@ -75,7 +97,7 @@
       font-weight: bold;
     }
     .announcements{
-      background-color: rgb(182, 182, 182);
+      
       grid-area:announcements;
       
     }
@@ -94,7 +116,7 @@
       padding: 15px 20px 15px 20px;
     }
     .trending{
-      background-color: rgb(182, 182, 182);
+      
       grid-area:trending;
       
     }
@@ -111,4 +133,9 @@
     .trending {
       padding-right: 30px;
       padding-bottom: 30px;
+    }
+    .projects,
+    .announcements,
+    .trending {
+      background-color: hsl(176, 47%, 81%);
     }
